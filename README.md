@@ -22,20 +22,21 @@ This full-stack application was developed during the COVID-19 pandemic to assist
 Here are four preview images showcasing different features of the app:
 
 ### **1️⃣ AI-Powered Chatbot Interface**  
-*(Users can ask health-related questions and receive real-time responses.)*  
-📸 *(Screenshot will be generated & attached here.)*  
+![Alt text](https://github.com/Gideon-777/dr-annie-frontend/blob/1a7567b6c270854f0d5e3fe658804845402f5883/1.png)
+
 
 ### **2️⃣ Survival Rate Prediction Dashboard**  
-*(Users can input medical records and receive AI-generated survival rate predictions.)*  
-📸 *(Screenshot will be generated & attached here.)*  
+![Alt text](https://github.com/Gideon-777/dr-annie-frontend/blob/1a7567b6c270854f0d5e3fe658804845402f5883/2.png)
 
 ### **3️⃣ COVID-19 Diagnosis from CT Scan**  
 *(Upload CT scan images to get AI-based diagnosis results.)*  
-📸 *(Screenshot will be generated & attached here.)*  
+📸 https://github.com/Gideon-777/dr-annie-frontend/blob/1a7567b6c270854f0d5e3fe658804845402f5883/3.png
+
+
 
 ### **4️⃣ Breast Cancer Diagnosis with AI**  
 *(Deep learning-powered detection for early breast cancer screening.)*  
-📸 *(Screenshot will be generated & attached here.)*  
+📸 https://github.com/Gideon-777/dr-annie-frontend/blob/1a7567b6c270854f0d5e3fe658804845402f5883/4.png 
 
 ---
 
@@ -77,6 +78,6 @@ The app will be running at **`http://localhost:3000`** 🚀
 ## 📞 Contact  
 For questions or feedback, feel free to reach out via:  
 ✉️ **Email:** mengaraaxel@gmail.com 
-🔗 **GitHub:** [your-github](https://github.com/Gideon-777)  
+🔗 **GitHub:** [Author](https://github.com/Gideon-777)  
 
 ---
