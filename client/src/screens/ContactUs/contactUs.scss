@@ -1,0 +1,139 @@
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.2rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+.btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--white {
+    background-color: white;
+    color: #777777;
+}
+
+.btn--animated {
+    animation: moveInBottom 0.5s ease-out;
+    animation-delay: 0.75s;
+    animation-fill-mode: backwards;
+}
+
+.btn::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn--white::after {
+    background-color: white;
+}
+
+.btn--purple::after {
+    background-color: #c8a1ff;
+}
+
+.btn--red::after {
+    background-color: #ff7a7a;
+}
+
+.login-form {
+    input {
+        font-size: 1.8rem;
+        width: 30vw;
+        margin-bottom: 2rem;
+        padding: 1.2rem 2.4rem;
+        height: 4.5rem;
+        border-radius: 50rem;
+
+        &::placeholder {
+            color: #c0c0c0;
+        }
+    }
+
+    textarea {
+        font-size: 1.8rem;
+        width: 30vw;
+        margin-bottom: 2rem;
+        padding: 1.2rem 2.4rem;
+        border-radius: 2rem;
+        &::placeholder {
+            color: #c0c0c0;
+        }
+    }
+
+    .error-text {
+        font-size: 2rem;
+        color: #ffc5c4;
+    }
+}
+
+.login-form__success-heading {
+    font-size: 3.5rem;
+    color: white;
+    padding: 0;
+    margin: 0 0 3rem;
+
+}
+
+
+.booking-drop-butt,
+.booking-drop-butt:hover, .booking-drop-butt:not(:disabled):not(.disabled):active, .booking-drop-butt:not(:disabled):not(.disabled).active, .show > .booking-drop-butt.dropdown-toggle,
+.booking-drop-butt:active, .booking-drop-butt:not(:disabled):not(.disabled):active:focus, .booking-drop-butt:not(:disabled):not(.disabled).active:focus, .show > .booking-drop-butt.dropdown-toggle:focus,
+.booking-drop-butt:focus {
+    background: white;
+    color: grey;
+    border: grey solid 1px;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    padding: 0rem 2rem;
+    height: 4.5rem;
+    border-radius: 50rem;
+}
+
+.phone-number-holder {
+    font-size: 1.8rem;
+    width: 30vw;
+    height: 4.5rem;
+    border-radius: 50rem;
+
+    &::placeholder {
+        color: #c0c0c0;
+    }
+
+}
+
+.booking-drop-butt__drop {
+    height: 20rem;
+    width: fit-content;
+    overflow: scroll;
+
+    a {
+        font-size: 1.4rem;
+    }
+}

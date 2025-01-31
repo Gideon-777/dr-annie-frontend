@@ -1,0 +1,420 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /*font-size: 16px;*/
+    line-height: 1.7;
+    padding: 3rem;
+    color: #777;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 85vh;
+    /*background-image: linear-gradient(to right bottom, rgba(139, 54, 213, 0.8), rgba(40, 180, 133, 0.81)), url("../../assets/images/background.jpg");*/
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+}
+
+.header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+
+.header__logo {
+    height: 3.5rem;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+}
+
+.heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+
+    /*animation-name: moveInLeft;*/
+    /*animation-duration: 1s;*/
+    /*animation-timing-function: ease-out;*/
+    /*animation-delay: 3s;*/
+    /*animation-iteration-count: 3;*/
+    animation: moveInLeft ease-out 1s;
+}
+
+.heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.password-icon {
+  position: absolute;
+  top: 82%;
+  right: 20px;
+  cursor: pointer;
+}
+
+
+
+
+.password-login {
+  position: absolute;
+  top: 58%;
+  right: 20px;
+  cursor: pointer;
+}
+
+
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.2rem 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+.btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--white {
+    background-color: white;
+    color: #777777;
+}
+
+.btn--animated {
+    animation: moveInBottom 0.5s ease-out;
+    animation-delay: 0.75s;
+    animation-fill-mode: backwards;
+}
+
+.btn::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn--white::after {
+    background-color: white;
+}
+
+.login-form {
+    input {
+        font-size: 1.8rem;
+        width: 30vw;
+        margin-bottom: 2rem;
+        padding: 1.2rem 2.4rem;
+        height: 100%;
+        border-radius: 50rem;
+
+        &::placeholder {
+            color: #c0c0c0;
+        }
+    }
+
+    .error-text {
+        font-size: 2rem;
+        color: #ffc5c4;
+    }
+}
+
+.google-logo {
+    width: 3rem;
+    margin-right: 3rem;
+}
+
+.login-form__heading {
+    font-size: 5.5rem;
+    color: white;
+    padding: 0;
+}
+
+
+.login-btn-holder {
+    .register-button {
+        margin-left: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 1236px) {
+    .login-form {
+        input {
+            font-size: 1.4rem !important;
+            width: 100% !important;
+            height: 3rem !important;
+            margin: 0 !important;
+            margin-bottom: 1rem !important;
+        }
+
+        textarea {
+            font-size: 1.4rem !important;
+            width: 100% !important;
+            margin: 0 !important;
+            margin-bottom: 1rem !important;
+        }
+    }
+
+    .navbar-cust {
+        margin-left: auto !important;
+        //margin: 0 !important;
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+
+        .nav-item {
+            width: 100%;
+        }
+    }
+
+    .phone-number-holder {
+        width: 100% !important;
+        height: 3rem;
+        border-radius: 50rem;
+        margin-bottom: 0 !important;
+
+        input {
+            margin-left: 0.5rem !important;
+        }
+
+        button {
+            font-size: 1rem !important;
+            height: 3rem !important;
+            margin-bottom: 1.2rem !important;
+        }
+
+        &::placeholder {
+            color: #c0c0c0;
+        }
+
+    }
+
+    .login-btn-holder {
+        margin-top: 2rem;
+        display: flex;
+
+        .btn {
+            font-size: 1.4rem !important;
+            padding: 0.5rem 0 !important;
+            width: 100%;
+        }
+    }
+
+    .google-button {
+        font-size: 1.2rem !important;
+        padding: 0.5rem 0.5rem !important;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 670px) {
+    .text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+    }
+
+    .login-form {
+        input {
+            font-size: 1.4rem !important;
+            width: 100% !important;
+            height: 3rem !important;
+            margin: 0 !important;
+            margin-bottom: 1rem !important;
+        }
+
+        textarea {
+            font-size: 1.4rem !important;
+            width: 100% !important;
+            margin: 0 !important;
+            margin-bottom: 1rem !important;
+        }
+    }
+
+    .login-form__heading {
+        font-size: 3.5rem !important;
+        color: white;
+        padding: 0;
+        margin-top: 6rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .header {
+        height: 85vh;
+        clip-path: none;
+        position: relative;
+    }
+
+
+
+    .google-logo {
+        width: 2rem;
+        margin-right: 0;
+        margin-bottom: 0.3rem;
+    }
+
+    .login-btn-holder {
+        margin-top: 2rem;
+        display: flex;
+    }
+
+    .navbar-cust {
+        margin-left: auto !important;
+        //margin: 0 !important;
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+
+        .nav-item {
+            width: 100%;
+        }
+    }
+
+    .booking-drop-butt,
+    .booking-drop-butt:hover, .booking-drop-butt:not(:disabled):not(.disabled):active, .booking-drop-butt:not(:disabled):not(.disabled).active, .show > .booking-drop-butt.dropdown-toggle,
+    .booking-drop-butt:active, .booking-drop-butt:not(:disabled):not(.disabled):active:focus, .booking-drop-butt:not(:disabled):not(.disabled).active:focus, .show > .booking-drop-butt.dropdown-toggle:focus,
+    .booking-drop-butt:focus {
+        width: 100% !important;
+        height: 3rem !important;
+        margin: 0 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .phone-number-holder {
+        width: 100% !important;
+        height: 3rem !important;
+        border-radius: 50rem;
+        margin-bottom: 1rem !important;
+
+        input {
+            margin: 1rem 0 1rem 0.5rem !important;
+        }
+
+        button {
+            font-size: 1rem !important;
+            margin: 1rem 0 1rem 0 !important;
+        }
+
+        &::placeholder {
+            color: #c0c0c0;
+        }
+
+    }
+
+    .google-button {
+        font-size: 1.2rem !important;
+        padding: 0.7rem 0.5rem !important;
+        width: 100%;
+    }
+}
+
