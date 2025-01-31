@@ -30,13 +30,13 @@ Here are four preview images showcasing different features of the app:
 
 ### **3️⃣ COVID-19 Diagnosis from CT Scan**  
 *(Upload CT scan images to get AI-based diagnosis results.)*  
-📸 https://github.com/Gideon-777/dr-annie-frontend/blob/1a7567b6c270854f0d5e3fe658804845402f5883/3.png
+![Alt text] (https://github.com/Gideon-777/dr-annie-frontend/blob/1a7567b6c270854f0d5e3fe658804845402f5883/3.png)
 
 
 
 ### **4️⃣ Breast Cancer Diagnosis with AI**  
 *(Deep learning-powered detection for early breast cancer screening.)*  
-📸 https://github.com/Gideon-777/dr-annie-frontend/blob/1a7567b6c270854f0d5e3fe658804845402f5883/4.png 
+![Alt text] (https://github.com/Gideon-777/dr-annie-frontend/blob/1a7567b6c270854f0d5e3fe658804845402f5883/4.png)
 
 ---
 
